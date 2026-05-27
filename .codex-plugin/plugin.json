@@ -1,0 +1,33 @@
+{
+  "name": "rundrill-excel",
+  "version": "0.1.0",
+  "description": "Excel coach — learn the spreadsheet by reading, predicting, and reviewing formulas (incl. AI-generated), with drills, progress, and mistake memory, inside your AI agent.",
+  "author": {
+    "name": "RunDrill",
+    "email": "hello@rundrill.com",
+    "url": "https://rundrill.com"
+  },
+  "homepage": "https://rundrill.com",
+  "repository": "https://github.com/rundrill/rundrill-excel",
+  "license": "CC-BY-NC-ND-4.0",
+  "keywords": ["rundrill", "course", "coach", "drills", "excel", "spreadsheets", "formulas", "code-review"],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "RunDrill Excel",
+    "shortDescription": "Excel coach: think in formulas, read & review them, build to spec.",
+    "longDescription": "An interactive Excel coach for the AI era: predict-the-result and diagnose-and-fix drills, build-to-spec with a self-scoring rubric, choose-the-tool, and a signature 'review the AI's formula' drill — built to catch the formula that returns a number and is quietly wrong. Backed by the RunDrill MCP engine with progress tracking and mistake memory. Core grid to PivotTables and dynamic arrays, plus analytics (Power Query/DAX), financial-modeling, automation, and dashboards tracks.",
+    "developerName": "RunDrill",
+    "category": "Education",
+    "capabilities": ["Interactive"],
+    "websiteURL": "https://rundrill.com",
+    "defaultPrompt": [
+      "Start an Excel drill session.",
+      "Quiz me on what this formula returns.",
+      "Review an AI-written formula and let me find the bug."
+    ],
+    "brandColor": "#3B7AE0",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/icon.png"
+  }
+}
