@@ -83,7 +83,7 @@ nobody grinds what they know. Find the band in ~3 minutes, by **reading, not bui
    experienced and want to sharpen specific areas*. Use it to choose the starting difficulty. If
    `profile.native_language` is empty, also ask once which language to explain in and save it with
    `record {action: "profile_set", native_language: "<lang>"}` — shared across courses, ask only when empty.
-2. Ask 5–8 small questions, one at a time — show a small grid + a formula and ask the exact result;
+2. Tell the learner it's a short placement (~6 quick questions) and ask 5–8 small questions **one at a time, announcing where they are each time** ("question 2 of ~6") — show a small grid + a formula and ask the exact result;
    show an error (`#REF!`, `#VALUE!`, `#N/A`) and ask the cause; ask what `$A$1` vs `A1` does when
    copied, or what `VLOOKUP` returns without the 4th argument. Climb while they're right; settle one
    band below the first band where they miss twice.
