@@ -31,19 +31,20 @@ manifest and ignores the rest.
 | OpenAI Codex | `.codex-plugin/plugin.json` + `.mcp.json` |
 | Google Antigravity | `plugin.json` + `mcp_config.json` (+ `rules/`) |
 
-The MCP endpoint is `https://mcp.rundrill.com/skills` — the skills-course host, passing
-`subject: "excel"`. On first use the host opens a browser tab for the OAuth handshake, then closes it
-— no API key to paste.
+The MCP endpoint is `https://mcp.rundrill.com/skills/excel` — the skills-course host, passing
+`subject: "excel"`. The server routes on the `/skills` segment and ignores the course name; the name
+makes Excel register as its own MCP server in your agent. On first use the host opens a browser tab
+for the OAuth handshake, then closes it — no API key to paste.
 
 ## Install
 
 - **Claude Code / Desktop** — via the RunDrill marketplace:
   ```
-  /plugin marketplace add rundrill/marketplace
+  /plugin marketplace add rundrill/rundrill
   /plugin install rundrill-excel@rundrill
   ```
   Then run `/excel-coach`.
-- **OpenAI Codex** — `codex plugin marketplace add rundrill/marketplace`, then install `rundrill-excel`.
+- **OpenAI Codex** — `codex plugin marketplace add rundrill/rundrill`, then install `rundrill-excel`.
 - **Google Antigravity** — drop this folder into `~/.gemini/config/plugins/rundrill-excel/` (global)
   or `<workspace>/.agents/plugins/rundrill-excel/` (workspace-scoped).
 
