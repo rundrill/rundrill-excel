@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "rundrill-excel": {
+      "serverURL": "https://mcp.rundrill.com/skills/excel",
       "serverUrl": "https://mcp.rundrill.com/skills/excel"
     }
   }
