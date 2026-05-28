@@ -1,0 +1,17 @@
+{
+  "name": "rundrill-excel",
+  "version": "0.1.1",
+  "description": "Excel coach — learn the spreadsheet by reading, predicting, and reviewing formulas (incl. AI-generated), with drills, progress, and mistake memory, inside your AI agent.",
+  "author": {
+    "name": "RunDrill",
+    "email": "hello@rundrill.com",
+    "url": "https://rundrill.com"
+  },
+  "homepage": "https://rundrill.com",
+  "license": "CC-BY-NC-ND-4.0",
+  "mcpServers": {
+    "rundrill-excel": {
+      "serverURL": "https://mcp.rundrill.com/skills/excel"
+    }
+  }
+}
