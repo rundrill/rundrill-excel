@@ -127,7 +127,7 @@ a clear named mistake with `record {action: "misconceptions_add", ...}`. The res
 briefly and specifically, never with generic praise: a correct answer can get a ≤6-word note
 ("exactly", "right — locked the rate"); a miss a ≤4-word ack ("close", "watch the $") — never praise
 a wrong answer, not every item; routine correctness is a silent ✓. Then call `practice` again until
-the plan count is reached; re-run `status` (show the banner) and begin the next batch — the user may be mid-chat, not a fresh session; close only when they stop, with 2–4 honest lines. On the first drill of the day
+the plan count is reached; begin the next batch WITHOUT reprinting the `status` banner — the banner belongs to the `status` subcommand at session start (or when the user asks), not between drills; close only when they stop, with 2–4 honest lines. On the first drill of the day
 (`is_first_drill_today`), if `profile.habit_anchor` is set, weave it once into the opener. Explain in
 `profile.native_language` when set.
 
