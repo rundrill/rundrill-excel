@@ -50,7 +50,7 @@ Retry `status` once the user confirms. Nothing works until the server is connect
 - `track` — the in-scope path: `core` (always) + optionally `analytics`/`modeling`/`automation`/
   `dashboards`. `track_needs_set` true means ask once (the **track gate** below).
 - `banner` — a pre-rendered dashboard (commit grid + per-band progress bars + counters). Print it
-  verbatim; don't reformat it.
+  verbatim inside a fenced code block — no language tag, so it renders in monospace; don't reformat it.
 - `misconceptions` — open mistakes and the most common named ones.
 - `profile` — `domains`/`interests`/`persona` (make examples match the learner's work);
   `native_language` (explain in it when set); `habit_anchor` (a daily-routine cue). Shared across courses.
@@ -60,7 +60,7 @@ Retry `status` once the user confirms. Nothing works until the server is connect
 
 If invoked with no argument, run `status`, then continue into the next right subcommand.
 
-**status** — call `status`. **Print `banner` verbatim inside one fenced code block** (the motivator:
+**status** — call `status`. **Print `banner` verbatim inside one fenced code block — no language tag, so it renders in monospace** (the motivator:
 a commit grid + per-band bars; never re-align or swap its glyphs). Below it, in plain words: the band
 + `milestone` (e.g. "9 of 19 junior topics solid"), the streak (and, if
 `engagement.days_since_last_drill ≥ 2`, one neutral "last drill: N days ago" line — no guilt), and
